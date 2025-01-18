@@ -1,0 +1,439 @@
+<!-- HTML -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bella's Chow</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-content">
+      <span onclick="window.location.href='index.html'" style="cursor: pointer;">Bella's Chow</span>
+      <!-- <div class="header-right">
+        <img src="assets/img/cart.jpg" alt="Cart Icon" class="cart-icon">
+        <div class="cart-count">0</div>
+      </div> -->
+    </div>
+  </header>
+
+  <nav>
+    <button class="tab-button active" data-tab="snacks">Boxed Snacks</button>
+    <button class="tab-button" data-tab="create">Create Box</button>
+    <button class="tab-button" data-tab="about">About Us</button>
+  </nav>
+
+  <!--<div class="cart">
+    <h2>CART</h2>
+    <div class="listCart">
+    </div>
+    <div class="cart_buttons">
+      <div class="cart_close"> CLOSE</div>
+      <div class="cart_checkout">
+        <a href="checkout.html">CHECKOUT</a>
+      </div>
+    </div>
+  </div> -->
+
+  <section id="snacks" class="tab-content active">
+    <div class="section-header">
+      <h2>Pre-made Snack Boxes</h2>
+      <p>Choose from our carefully curated selection of Nigerian snack boxes</p>
+    </div>
+    <div class="items-grid">
+      <div class="item-card">
+        <a href="pages/pikin_box.html">
+          <div class="box-contents">
+            <div class="box-item">
+              <img src="assets/img/puff_puff.jpg" alt="Puff Puff">
+              <span>Puff Puff</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/spicy_drumstick.jpg" alt="Spicy Drumstick">
+              <span>Spicy Drumstick</span>
+            </div>
+          </div>
+          <h3>Pikin Box</h3>
+          <p>$11.99</p>
+        </a>
+        <button class="buy-now" onclick="window.open('https://buy.stripe.com/5kA4k324P2iV4msaEZ')">Buy Now</button>
+      </div>
+      <div class="item-card">
+        <a href="pages/hungry_man_box.html">
+          <div class="box-contents">
+            <div class="box-item">
+              <img src="assets/img/puff_puff.jpg" alt="Puff Puff">
+              <span>Puff Puff</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/spicy_drumstick.jpg" alt="Spicy Drumstick">
+              <span>Spicy Drumstick</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/chicken_wing.jpg" alt="Chicken Wing">
+              <span>Chicken Wing</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/peppered_meat.jpg" alt="Peppered Meat">
+              <span>Peppered Meat</span>
+            </div>
+          </div>
+          <h3>Hungry Man Box</h3>
+          <p>$25.99</p>
+        </a>
+        <button class="buy-now" onclick="window.open('https://buy.stripe.com/cN23fZcJt2iV8CI7sO')">Buy Now</button>
+      </div>
+      <div class="item-card">
+        <a href="pages/senior_man_box.html">
+          <div class="box-contents">
+            <div class="box-item">
+              <img src="assets/img/puff_puff.jpg" alt="Puff Puff">
+              <span>Puff Puff</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/spicy_drumstick.jpg" alt="Spicy Drumstick">
+              <span>Spicy Drumstick</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/chicken_wing.jpg" alt="Chicken Wing">
+              <span>Chicken Wing</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/peppered_meat.jpg" alt="Peppered Meat">
+              <span>Peppered Meat</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/sharwama.jpg" alt="Sharwama">
+              <span>Sharwama</span>
+            </div>
+          </div>
+          <h3>Senior Man Box</h3>
+          <p>$36.99</p>
+        </a>
+        <button class="buy-now" onclick="window.open('https://buy.stripe.com/14k3fZbFp9LnbOUcN9')">Buy Now</button>
+      </div>
+      <div class="item-card">
+        <a href="pages/odogwu_box.html">
+          <div class="box-contents">
+            <div class="box-item">
+              <img src="assets/img/puff_puff.jpg" alt="Puff Puff">
+              <span>Puff Puff</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/spicy_drumstick.jpg" alt="Spicy Drumstick">
+              <span>Spicy Drumstick</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/chicken_wing.jpg" alt="Chicken Wing">
+              <span>Chicken Wing</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/peppered_meat.jpg" alt="Peppered Meat">
+              <span>Peppered Meat</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/sharwama.jpg" alt="Sharwama">
+              <span>Sharwama</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/beef_kebab.jpg" alt="Beef Kebab">
+              <span>Beef Kebab</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/chicken_kebab.jpg" alt="Chicken Kebab">
+              <span>Chicken Kebab</span>
+            </div>
+          </div>
+          <h3>Odogwu Box</h3>
+          <p>$55.99</p>
+        </a>
+        <button class="buy-now" onclick="window.open('https://buy.stripe.com/6oE5o738T4r34ms7t5')">Buy Now</button>
+      </div>
+      <div class="item-card">
+        <a href="pages/billionaire_box.html">
+          <div class="box-contents">
+            <div class="box-item">
+              <img src="assets/img/puff_puff.jpg" alt="Puff Puff">
+              <span>Puff Puff</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/spicy_drumstick.jpg" alt="Spicy Drumstick">
+              <span>Spicy Drumstick</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/chicken_wing.jpg" alt="Chicken Wing">
+              <span>Chicken Wing</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/peppered_meat.jpg" alt="Peppered Meat">
+              <span>Peppered Meat</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/sharwama.jpg" alt="Sharwama">
+              <span>Sharwama</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/beef_kebab.jpg" alt="Beef Kebab">
+              <span>Beef Kebab</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/chicken_kebab.jpg" alt="Chicken Kebab">
+              <span>Chicken Kebab</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/fried_plantain.jpg" alt="Fried Plantain">
+              <span>Fried Plantain</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/fried_yam.jpg" alt="Fried Yam">
+              <span>Fried Yam</span>
+            </div>
+            <div class="box-item">
+              <img src="assets/img/roasted_plantain.jpg" alt="Roasted Plantain">
+              <span>Roasted Plantain</span>
+            </div>
+          </div>
+          <h3>Billionaire Box</h3>
+          <p>$150</p>
+        </a>
+        <button class="buy-now" onclick="window.open('https://buy.stripe.com/dR62bVeRBf5H9GM8wU')">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="create" class="tab-content">
+    <div class="create-header">
+      <h2>Create Your Box</h2>
+      <p>Select items to build your custom snack box!</p>
+      
+      <div class="create-box-tabs">
+        <button class="create-tab-button active" data-createtab="snacks-tab">Snacks</button>
+        <button class="create-tab-button" data-createtab="drinks-tab">Drinks</button>
+      </div>
+    </div>
+    
+    <div id="snacks-tab" class="create-tab-content active">
+      <div class="items-grid">
+        <div class="item-card">
+          <a href="pages/puff_puff.html">
+            <img src="assets/img/puff_puff.jpg" alt="Puff Puff">
+          </a>
+          <h3>Puff Puff</h3>
+          <p>$5.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/00g6sb7p9bTv7yEbJ7')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/spicy_drumstick.html">
+            <img src="assets/img/spicy_drumstick.jpg" alt="Spicy Drumstick">
+          </a>
+          <h3>Spicy Drumstick</h3>
+          <p>$6.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/3cs6sbdNx2iVdX28wL')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/beef_kebab.html">
+            <img src="assets/img/beef_kebab.jpg" alt="Beef Kebab">
+          </a>
+          <h3>Beef Kebab</h3>
+          <p>$9.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/9AQaIrfVFcXz2ek6oR')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/chicken_kebab.html">
+            <img src="assets/img/chicken_kebab.jpg" alt="Chicken Kebab">
+          </a>
+          <h3>Chicken Kebab</h3>
+          <p>$9.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/8wM2bV24Pf5H4msfZs')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/chicken_wing.html">
+            <img src="assets/img/chicken_wing.jpg" alt="Chicken Wing">
+          </a>
+          <h3>Chicken Wings</h3>
+          <p>$6.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/6oE5o7fVF8Hjg5aaF4')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/fried_plantain.html">
+            <img src="assets/img/fried_plantain.jpg" alt="Fried Plantain">
+          </a>
+          <h3>Fried Plantain</h3>
+          <p>$5.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/28o17ReRB7Df2ek00y')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/fried_yam.html">
+            <img src="assets/img/fried_yam.jpg" alt="Fried Yam">
+          </a>
+          <h3>Fried Yam</h3>
+          <p>$5.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/28odUD5h19Ln2ekeVp')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/grilled_fish.html">
+            <img src="assets/img/grilled_fish.jpg" alt="Grilled Fish">
+          </a>
+          <h3>Grilled Fish</h3>
+          <p>$24.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/cN2eYH38T8Hj1agaFb')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/peppered_meat.html">
+            <img src="assets/img/peppered_meat.jpg" alt="Peppered Meat">
+          </a>
+          <h3>Peppered Meat</h3>
+          <p>$8.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/bIY9En8tde1D2ek6oP')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/roasted_plantain.html">
+            <img src="assets/img/roasted_plantain.jpg" alt="Roasted Plantain">
+          </a>
+          <h3>Roasted Plantain</h3>
+          <p>$8.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/28o3fZ8tdg9Lf16aFa')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="pages/sharwama.html">
+            <img src="assets/img/sharwama.jpg" alt="Sharwama">
+          </a>
+          <h3>Sharwama</h3>
+          <p>$9.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/8wM5o7fVF6zb06c00s')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="drinks-tab" class="create-tab-content">
+      <div class="items-grid">
+        <div class="item-card">
+          <a href="https://buy.stripe.com/3cs3fZgZJ7Df7yEfZx">
+            <img src="assets/img/chapman.jpg" alt="Chapman">
+          </a>
+          <h3>Chapman</h3>
+          <p>$3.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/3cs3fZgZJ7Df7yEfZx')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="https://buy.stripe.com/dR6bMvgZJ0aNdX214E">
+            <img src="assets/img/ginger_beer.jpg" alt="Ginger Beer">
+          </a>
+          <h3>Ginger Beer</h3>
+          <p>$3.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/dR6bMvgZJ0aNdX214E')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="https://buy.stripe.com/5kAaIraBl7Df9GM28J">
+            <img src="assets/img/zobo.jpg" alt="Zobo">
+          </a>
+          <h3>Zobo</h3>
+          <p>$3.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/5kAaIraBl7Df9GM28J')">Buy Now</button>
+        </div>
+        <div class="item-card">
+          <a href="https://buy.stripe.com/cN22bVaBl1eRcSYfZA">
+            <img src="assets/img/malta_guiness.jpg" alt="Malta Guiness">
+          </a>
+          <h3>Malta Guiness</h3>
+          <p>$3.99</p>
+          <!-- <div class="quantity-counter">
+            <button class="quantity-btn minus" aria-label="Decrease quantity"></button>
+            <input type="number" class="quantity-input" value="1" min="1" max="99">
+            <button class="quantity-btn plus" aria-label="Increase quantity"></button>
+          </div> -->
+          <button class="buy-now" onclick="window.open('https://buy.stripe.com/cN22bVaBl1eRcSYfZA')">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="tab-content">
+    <h2>About Us</h2>
+    <p>Welcome to Bella's Chow! We offer the best snacks for all occasions.</p>
+    <h3>For Catering Contact Us</h3>
+    <p>Email: Bellasnacks.chow@gmail.com</p>
+    <p>Phone: +1 (612) 483-5041</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Bella's Chow. All rights reserved.
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
