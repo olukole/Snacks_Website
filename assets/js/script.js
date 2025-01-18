@@ -1,4 +1,5 @@
 // JavaScript
+// Tab functionality
 const tabs = document.querySelectorAll('.tab-button');
 const contents = document.querySelectorAll('.tab-content');
 
@@ -12,6 +13,7 @@ tabs.forEach(tab => {
     });
 });
 
+// Create tab functionality
 document.querySelectorAll('.create-tab-button').forEach(button => {
   button.addEventListener('click', () => {
     // Remove active class from all create tabs and content
@@ -26,7 +28,8 @@ document.querySelectorAll('.create-tab-button').forEach(button => {
     document.getElementById(tabId).classList.add('active');
   });
 });
-// Add this after your existing code
+
+// Quantity counter functionality
 function initializeQuantityCounters() {
   document.querySelectorAll('.quantity-counter').forEach(counter => {
     const minusBtn = counter.querySelector('.minus');
@@ -61,11 +64,13 @@ function initializeQuantityCounters() {
 // Call the function when the page loads
 document.addEventListener('DOMContentLoaded', initializeQuantityCounters);
 
+// Cart functionality
 const cartIcon = document.querySelector('.cart-icon');
 const cart = document.querySelector('.cart');
 const cartClose = document.querySelector('.cart_close');
 const headerRight = document.querySelector('.header-right');
 
+// Toggle cart visibility
 function toggleCart() {
   cart.classList.toggle('active');
   headerRight.classList.toggle('shifted');
@@ -74,7 +79,7 @@ function toggleCart() {
 cartIcon.addEventListener('click', toggleCart);
 cartClose.addEventListener('click', toggleCart);
 
-// Cart functionality
+// Cart items array
 let cartItems = [];
 
 // Load cart from cookies when page loads
@@ -94,8 +99,7 @@ document.querySelectorAll('.buy-now').forEach(button => {
     const name = card.querySelector('h3').textContent;
     const price = card.querySelector('p').textContent;
     const image = card.querySelector('img').src;
-    const quantity = 1;  // Since we removed quantity selectors
-
+    const quantity = parseInt(card.querySelector('.quantity-input').value);
     buyNow({
       name,
       price,
@@ -105,12 +109,16 @@ document.querySelectorAll('.buy-now').forEach(button => {
   });
 });
 
+// Function to handle buying an item
 function buyNow(item) {
+  // Normalize item name to title case
+  item.name = item.name.split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
   // Check if item already exists in cart
   const existingItem = cartItems.find(cartItem => cartItem.name === item.name);
   
   if (existingItem) {
-    existingItem.quantity += 1;
+    existingItem.quantity += item.quantity;
   } else {
     cartItems.push(item);
   }
@@ -123,6 +131,7 @@ function buyNow(item) {
   updateCartCount();
 }
 
+// Function to update cart display
 function updateCartDisplay() {
   const listCart = document.querySelector('.listCart');
   listCart.innerHTML = '';
@@ -165,6 +174,7 @@ function updateCartDisplay() {
   });
 }
 
+// Function to update item quantity in the cart
 function updateQuantity(itemName, change) {
   const item = cartItems.find(item => item.name === itemName);
   if (item) {
@@ -178,6 +188,7 @@ function updateQuantity(itemName, change) {
   }
 }
 
+// Function to update the cart item count display
 function updateCartCount() {
   const cartCount = document.querySelector('.cart-count');
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
